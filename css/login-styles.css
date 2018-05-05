@@ -1,0 +1,93 @@
+/*
+Plugin Name: WP Inspire
+Plugin URI: 
+Description: Replaces WP logo on login with theme logo and inspirational quotes.
+Version: 1.0
+Author: Leroy Rosales
+Author URI: https://leroyrosales.com
+Copyright: Leroy Rosales
+Text Domain: wp-inspire
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Styles for login page */
+@font-face {
+    font-family: 'abril_fatfaceregular';
+    src: url('../fonts/abrilfatface-regular-webfont.woff2') format('woff2'),
+         url('../fonts/abrilfatface-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body.login {
+	background: #1a2a6c;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body.wp-core-ui .button-primary {
+    background: #1a2a6c;
+    border-color: #1a2a6c;
+    box-shadow: none;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+body.login #login {
+    width:40vw;
+}
+
+.login form {
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 36px 34px 46px;
+    background: #fff;
+    box-shadow: none;
+    border-radius: 10px;
+    max-width:265px;
+    margin:0 auto;
+}
+
+.login #backtoblog a, .login #nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login #login_error, .login .message {
+    border-left: none;
+    padding: 12px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    background-color: transparent;
+    box-shadow: none;
+    color: #fff;
+    text-align: center;
+}
+
+body.login #backtoblog, body.login #nav {
+    font-size: 13px;
+    padding: 0 24px;
+    max-width: 265px;
+    margin:24px auto 0;
+}
+
+/* Quote styles */
+body.login .wpinspire-quote {
+    color: #fff;
+    text-align: center;
+    font-family:cursive;
+    font-size:1.5rem;
+    line-height: 1.5;
+    letter-spacing:2px;
+    margin-bottom:40px;
+    font-family: 'abril_fatfaceregular', cursive;
+    font-style: italic;
+	text-shadow:
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	 1px 1px 0 #000;
+}
