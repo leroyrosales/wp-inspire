@@ -12,7 +12,7 @@ Replaces WP logo on login with theme logo and inspirational quotes.
 
 Simple plugin that'll update the default WP login area to include your custom/WP theme logo in place of the default WP logo. Will also point logo to site URL and use site description, rather than the default WP URL and description. Includes an inspirational quote to get you motivated! 
 
-Database of Quotes built together by 4skinSkywalker (https://github.com/4skinSkywalker/Database-Quotes-JSON).
+Database of Quotes built by 4skinSkywalker (https://github.com/4skinSkywalker/Database-Quotes-JSON).
 
 = Links =
 * [Website](https://leroyrosales.com)
